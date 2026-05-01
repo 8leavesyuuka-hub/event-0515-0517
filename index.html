@@ -1128,7 +1128,7 @@
 // ============================================================
 const CONFIG = {
   // Google Apps Script のURL（デプロイ後に貼り付けてください）
-  GAS_URL: 'https://script.google.com/macros/s/XXXXXXXX/exec',
+  GAS_URL: 'https://script.google.com/macros/s/AKfycbyMeSWVYOPKg0HX5XBX7lka7_RPEuwq2ctgY55TrZkR6i8QGIA8sA3tQxnIX0L-NO2oNg/exec',
 
   // Square 支払いリンク（入場料2500円用 — Square ダッシュボードで作成してください）
   SQUARE_URL: 'https://square.link/u/XXXXXXXX',   // ← 入場料 2500円 のリンクに変更
@@ -1268,6 +1268,7 @@ document.getElementById('regForm').addEventListener('submit', async function(e) 
                 : selectedPayment === 'bank'   ? '銀行振り込み'
                 : '当日現地払い',
     total_amount: '¥' + total.toLocaleString(),
+    event_date:   '5/17',
     _subject:     '【Open your Senses 申し込み】' + document.getElementById('f-name').value + ' 様',
   };
 
